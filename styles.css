@@ -1,0 +1,45 @@
+h3{
+    margin: 30px auto;
+    text-align: center;
+    line-height: 1;
+    color: #888;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.wrap{
+    text-align: center;
+}
+.nk_piechart {
+    --bs: 150px; /* element size */
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+.nk_piechart svg {
+    width: var(--bs); height: var(--bs);
+    transform: rotate(-90deg);
+    fill: none;
+    border-radius: 50%;
+}
+
+.nk_piechart svg .c1 {
+    stroke-width: 6;
+    fill: #efecec;
+}
+.nk_piechart.animated svg .c1 { /* animated */
+    stroke-dasharray: 0 100;
+}
+.nk_piechart svg .c2 {
+    fill: #fff;
+}
+.nk_piechart div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    line-height: var(--bs);
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #4c5259;
+}
